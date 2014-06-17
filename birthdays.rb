@@ -14,7 +14,7 @@ x = 0
 while cases_to_test > x
   test_row = birthday_info[x]
   if test_row[0] == last_name
-    puts "We found them! (WOOHOO!) Here is their information:"
+    puts 'We found them! (WOOHOO!) Here is their information:'
     puts "\tName: #{test_row[1]} #{test_row[0]}, DOB: #{test_row[2]}, Email: #{test_row[3]}"
 
     birthday = Date.parse(test_row[2])
@@ -24,7 +24,7 @@ while cases_to_test > x
     break
   elsif
     cases_to_test == x + 1
-    puts "Hmmmm.... I searched and searched, but we don't have a record of that person. SORRY!"
+    puts "Hmmmm.... I searched and searched, but we don't have a record for #{last_name}. SORRY!"
     break
   else
     x += 1
