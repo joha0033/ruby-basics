@@ -22,8 +22,7 @@ while cases_to_test > x
 
     puts "\tThis person is #{age} years old!"
     break
-  elsif
-    cases_to_test == x + 1
+  elsif cases_to_test == x + 1
     puts "Hmmmm.... I searched and searched, but we don't have a record for #{last_name}. SORRY!"
     break
   else
